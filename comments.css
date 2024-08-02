@@ -1,0 +1,51 @@
+/* Style général pour la table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 18px;
+  text-align: left;
+}
+
+/* Style pour les en-têtes de la table */
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Style pour les en-têtes */
+thead {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+/* Style pour les lignes impaires de la table */
+tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+/* Style pour les lignes paires de la table */
+tbody tr:nth-child(even) {
+  background-color: #fff;
+}
+
+/* Style pour le conteneur de la table */
+.table-container {
+  overflow-x: auto;
+}
+
+/* Style pour le titre */
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+/* Ajouter des bordures aux cellules */
+th, td {
+  border: 1px solid #ccc;
+}
+
+/* Changer la couleur de fond au survol */
+tbody tr:hover {
+  background-color: #f1f1f1;
+}

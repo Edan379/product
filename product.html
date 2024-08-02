@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .contentKit {
+      list-style-type: decimal;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+
+    table img {
+      width: 50px;
+      height: 50px;
+    }
+  </style>
+  <link rel="stylesheet" href="./comments.css">
+  <title>Kit de survie||Boutique en ligne</title>
+</head>
+
+<body>
+  <form action="" method="get">
+    <!--boutton de recherche-->
+    <button name="searchButton" class="searchButton" type="submit">rechercher</button>
+
+    <!--ajout d'une barre de recherche-->
+    <label for="searchBar"></label>
+    <input name="searchBar" class="searchBar" type="search" placeholder="tape le nom du produit">
+  </form>
+
+  <!--titre produit-->
+  <h1 class="h1Produit">Kit de survie</h1>
+
+  <!--description du produit-->
+  <p>Bien sûr, un kit de survie est un ensemble d'articles soigneusement sélectionnés pour aider une personne à faire
+    face à des situations d'urgence ou de survie. Voici une description détaillée d'un kit de survie de base :</p>
+
+  <ul class="contentKit">
+    <li>Sac à dos résistant : Un sac à dos durable et résistant, de préférence imperméable, pour transporter l'ensemble
+      du kit.</li>
+    <li>Nourriture : Des rations alimentaires d'urgence, des barres énergétiques, des sachets de nourriture déshydratée
+      et des ustensiles pour manger.</li>
+    <li>Eau : Des contenants pour l'eau, comme une gourde, une bouteille pliable ou des comprimés de purification d'eau.
+    </li>
+    <li>Vêtements : Des vêtements adaptés aux conditions météorologiques, y compris des vêtements imperméables, des
+      couches thermiques, des chaussettes de rechange, et un chapeau pour se protéger du soleil.</li>
+    <li>Abri : Une tente légère, une bâche imperméable, ou une couverture de survie pour fournir un abri contre les
+      intempéries.</li>
+    <li>Équipement de chauffage : Un sac de couchage adapté à la saison, des couvertures de survie réfléchissantes, et
+      éventuellement un réchaud portable avec du combustible.</li>
+    <li>Outils polyvalents : Un couteau robuste, une pince multifonction, une scie pliante, et un outil multifonction
+      peuvent être très utiles dans différentes situations.</li>
+    <li>Éclairage : Une lampe frontale à LED avec des piles de rechange, une lampe de poche compacte, et des bougies
+      peuvent fournir un éclairage dans l'obscurité.</li>
+    <li>Communication : Un téléphone portable chargé avec un chargeur solaire, une radio à manivelle, et des sifflets
+      pour alerter en cas de besoin.</li>
+    <li>Premiers soins : Une trousse de premiers soins comprenant des pansements, des médicaments de base, des
+      compresses, et tout autre article nécessaire pour les premiers secours.</li>
+    <li>Outils de navigation : Une boussole, une carte de la région, et éventuellement un GPS peuvent aider à
+      s'orienter.</li>
+    <li>Feu : Des allumettes étanches, un briquet, et éventuellement un dispositif d'allumage de feu, comme un
+      firesteel.</li>
+    <li>Hygiène personnelle : Du savon, du dentifrice, des lingettes humides, et du papier toilette peuvent aider à
+      maintenir l'hygiène personnelle.</li>
+    <li>Équipement de pêche ou de chasse : Selon les circonstances, du matériel de pêche ou de chasse léger peut être
+      inclus.</li>
+    <li>Divertissement : Un livre, des jeux de cartes ou tout autre article léger pour aider à passer le temps et
+      maintenir le moral.</li>
+  </ul>
+
+  <p>Il est important de personnaliser le kit en fonction des besoins individuels, de la région et des risques
+    spécifiques auxquels on peut être confronté. Un bon kit de survie doit être régulièrement réévalué et mis à jour
+    pour assurer son efficacité.</p>
+
+  <hr>
+
+  <!--image du produit-->
+  <img class="survivalKitImg" src="./images.jpg" alt="kit de survie">
+
+  <!--vidéo du produit-->
+  <iframe width="846" height="476" src="https://www.youtube.com/embed/rntZOALPknU"
+    title="Qui nous cache quelque chose ? #3 (ft Theodort, Soso Maness &amp; Maskey)" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen></iframe>
+
+  <!--prix du produit-->
+  <p>Tarif:<em><strong>25 euros</strong></em></p>
+
+  <hr>
+
+  <form action="" method="post">
+    <!--liste déroulante de la quantité de produit-->
+    <label for="amountProduct">Quantité de produit</label>
+    <input class="amountProduct" name="amountProduct" type="number" min="1" max="5">
+
+    <p>Choisissez un mode de livraison ci-dessous:</p>
+
+    <!--boutton pour type de livraison-->
+    <ul>
+      <li>
+        <input name="typeDelivery" value="standard" type="radio"></input>
+        <label for="typeDelivery">Livraison standard</label>
+      </li>
+
+      <li>
+        <input name="typeDelivery" value="express" type="radio"></input>
+        <label for="typeDelivery">Livraison express</label>
+      </li>
+
+      <li>
+        <input name="typeDelivery" value="enPointRelais" type="radio"></input>
+        <label for="typeDelivery">En point relais</label>
+      </li>
+    </ul>
+
+    <input type="submit" value="Acheter">
+  </form>
+
+  <hr>
+
+  <!--tableau de produit supplémentaire table chaise lampe couvert chapeau-->
+  <table class="additionnalProduct">
+    <thead>
+      <tr>
+        <th>Titres</th>
+        <th>Images</th>
+        <th>Tarifs</th>
+        <th>Descriptions</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>Table</td>
+        <td><img src="./images/tablePliable.jpg" alt="tablePliable"></td>
+        <td>15 euros</td>
+        <td>Table pliable</td>
+      </tr>
+      <tr>
+        <td>Chaise</td>
+        <td><img src="./images/chaisePliable.jpg" alt="chaisePliable"></td>
+        <td>15 euros</td>
+        <td>Chaise pliable</td>
+      </tr>
+
+      <tr>
+        <td>Lampe</td>
+        <td><img src="./images/lampeTorche.jpg" alt="lampeTorche"></td>
+        <td>15 euros</td>
+        <td>Lampe Led</td>
+      </tr>
+
+      <tr>
+        <td>Chapeau</td>
+        <td><img src="./images/images.jpg" alt="chapeau"></td>
+        <td>15 euros</td>
+        <td>imperméable</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <hr>
+
+  <!--section pour lire les comm-->
+  <section>
+    <h2>Commentaires utilisateurs</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Auteur</th>
+          <th>Message</th>
+          <th>Note attribuée</th>
+          <th>Date du message</th>
+        </tr>
+      </thead>
+
+      <tbody id="comments-tbody">
+
+      </tbody>
+    </table>
+  </section>
+
+  <hr>
+
+  <!--envoyer un commentaire-->
+  <form action="" method="post">
+    <label for="comment">Commentaire</label>
+    <textarea id="comment" class="comment" name="comment" type="text"
+      placeholder="écrivez le commentaire ici"></textarea>
+    <input type="submit" value="envoyer" />
+  </form>
+  <script src="./comments.js"></script>
+</body>
+
+</html>
